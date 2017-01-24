@@ -1,0 +1,29 @@
+.searchWindow {
+  position: relative;
+
+  .searchWindow-input {
+    width: 240px;
+    height: 32px;
+    display: block;
+    line-height: 1;
+    padding: 3px 36px 0 18px;
+    outline: none;
+    border: none;
+    background-color: #edeeef;
+    border-radius: 16px;
+    -webkit-appearance: none;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .searchWindow-button {
+    position: absolute;
+    top: 5px;
+    left: 195px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

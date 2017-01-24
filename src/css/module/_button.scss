@@ -1,0 +1,16 @@
+.button {
+  border: 1px solid #ccc;
+
+  &.button-sort {
+    border-radius: 16px;
+    padding: 8px;
+    background-color: #ccc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}

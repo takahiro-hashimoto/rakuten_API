@@ -1,0 +1,34 @@
+.l-content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.l-left {
+  float: left;
+}
+
+.l-right {
+  float: right;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.l-bottom-small {
+  margin-bottom: 12px;
+}
+
+.l-bottom-large {
+  margin-bottom: 24px;
+}
+
+.l-bottom-xlarge {
+  margin-bottom: 48px;
+}
+
+.l-bottom-xxlarge {
+  margin-bottom: 64px;
+}
