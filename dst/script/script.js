@@ -42,19 +42,20 @@ function createItems(data) {
   var itemReviewAverage = item.reviewAverage;
   var itemShopName = item.shopName;
   var htmlTemplate = $('<div class="card">' +
+  '<a class="card-link" href="' + affiliateUrl + '">' +
   '<div class="card-inner">' +
   '<div class="card-thumbnail-wrapper l-card-bottom-small">' +
-  '<a href="' + affiliateUrl + '">' +
   '<img class="card-thumbnail" src="' + imageUrl + '" alt="' + item.itemName + '" width="150" ' +
   'height="150"/>' +
-  '</a></div>' +
-  '<h2 class="card-title l-card-bottom-small"><a href="' + affiliateUrl + '">' + itemName + '</a></h2>' +
+  '</div>' +
+  '<h2 class="card-title text-strong l-card-bottom-small">' + itemName + '</h2>' +
   '<div class="card-shop l-card-bottom-small">' + itemShopName + '</div>' +
   '<div class="clearfix">' +
   '<div class="l-right"><p class="card-price text-price text-strong">' + itemPrice + '円</p></div>' +
   '<div class="l-left"><p class="card-review text-review">評価：' + '<span class="text-strong">' + itemReviewAverage + '点</span></p></div>' +
   '</div>' +
   '</div>' +
+  '</a>' +
   '</div>');
 
   //テンプレートを追加
