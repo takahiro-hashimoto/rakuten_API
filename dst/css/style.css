@@ -82,12 +82,13 @@ table {
 .l-card-trisect > * {
   float: left;
   margin: 0 20px 20px 0;
-  width: 298px; }
+  width: 298px;
+  height: 300px; }
   .l-card-trisect > *:nth-child(3) {
     margin: 0 0 20px; }
 
 .l-card-bottom-small {
-  margin-bottom: 8px; }
+  margin-bottom: 12px; }
 
 .loader .loader-icon {
   position: fixed;
@@ -176,8 +177,18 @@ table {
   .card .card-title {
     font-size: 16px; }
   .card .card-price {
-    font-size: 24px;
-    font-weight: bold; }
+    font-size: 20px; }
+  .card .card-review {
+    font-size: 18px; }
+
+.text-price {
+  color: #dd171f; }
+
+.text-review {
+  color: #f28900; }
+
+.text-strong {
+  font-weight: bold; }
 
 .footer {
   background-color: #ccc; }
@@ -188,3 +199,6 @@ table {
     .footer .footer-inner .footer-title {
       font-size: 16px;
       text-align: center; }
+
+.is-active {
+  background-color: #faffbd; }

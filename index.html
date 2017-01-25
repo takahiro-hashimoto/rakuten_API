@@ -5,7 +5,8 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <meta http-equiv='X-UA-Compatible' content='ie=edge'>
 <link rel='stylesheet' type='text/css' href='./dst/css/style.css' media='all' />
-<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script type='text/javascript' src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js'></script>
 <script type='text/javascript' src='./dst/script/script.js'></script>
 <title>楽天API課題</title>
 </head>
@@ -30,10 +31,10 @@
         </form>
       </div>
       <ul class='sort-box l-left'>
-        <li  class='js-sort-review-score-high button button-sort'>口コミ高い順</li>
-        <li class='js-sort-review-score-low button button-sort'>口コミ安い順</li>
         <li class='js-sort-price-high button button-sort'>価格高い順</li>
-        <li class='js-sort-price-high button button-sort'>価格安い順</li>
+        <li class='js-sort-price-low button button-sort'>価格安い順</li>
+        <li  class='js-sort-review-score-high button button-sort'>口コミ高い順</li>
+        <li class='js-sort-review-score-low button button-sort'>口コミ低い順</li>
       </ul>
     </div>
   </div>
@@ -43,7 +44,7 @@
 <!-- scrollHeader　▼ -->
 <div id='js-scroll-header' class='l-scrollHeader scrollHeader header is-hide'>
   <div class='header-inner clearfix'>
-    <p class='l-left'>楽天検索ナビ</p>
+    <p class='l-left l-searchWindow scrollHeader-title'>楽天検索ナビ</p>
       <div class='searchWindow l-left l-searchWindow'>
         <form action='form02'>
           <input id='js-search-window-scroll' class='searchWindow-input' type='search' name='input02' placeholder="検索したいアイテムを入力">
@@ -51,10 +52,10 @@
         </form>
       </div>
       <ul class='sort-box l-left'>
-        <li class='js-sort-review-score-high button button-sort'>口コミ高い順</li>
-        <li class='js-sort-review-score-low button button-sort'>口コミ安い順</li>
         <li class='js-sort-price-high button button-sort'>価格高い順</li>
-        <li class='js-sort-price-high button button-sort'>価格安い順</li>
+        <li class='js-sort-price-low button button-sort'>価格安い順</li>
+        <li class='js-sort-review-score-high button button-sort'>口コミ高い順</li>
+        <li class='js-sort-review-score-low button button-sort'>口コミ低い順</li>
       </ul>
   </div>
 </div>
