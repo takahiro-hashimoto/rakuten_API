@@ -132,6 +132,7 @@ $(function (e) {
   e.preventDefault();
   });
 
+  //sort機能
   $('.js-sort-list li').on('click', function(){
     $('.js-sort-list li').removeClass('is-active');
     var num = $(this).data('index');

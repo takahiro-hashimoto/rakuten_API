@@ -73,15 +73,6 @@ $(document).on('click', '.js-sort-review-score-high', function(){
   }
 });
 
-$(document).on('click', '.js-sort-review-score-low', function(){
-  if(Items) {
-  Items.Items.sort(function(a, b) {
-  return a.Item.reviewAverage - b.Item.reviewAverage;
-  });
-  createItems(Items);
-  }
-});
-
 $(document).on('click', '.js-sort-price-high', function(){
   if(Items) {
   Items.Items.sort(function(a, b) {
