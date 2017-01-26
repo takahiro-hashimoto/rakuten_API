@@ -168,7 +168,7 @@ table {
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
   .card:hover {
-    background-color: #fbfaf0; }
+    background-color: #fefff2; }
   .card .card-link {
     text-decoration: none;
     color: #333; }
@@ -206,5 +206,9 @@ table {
       font-size: 16px;
       text-align: center; }
 
+.is-hide {
+  display: none; }
+
 .is-active {
-  background-color: #faffbd; }
+  background-color: #faffbd !important;
+  border: 1px solid #faffbd !important; }

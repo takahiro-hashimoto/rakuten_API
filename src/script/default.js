@@ -132,6 +132,16 @@ $(function (e) {
   e.preventDefault();
   });
 
+  //sort機能
+  $('.js-sort-list li').on('click', function(){
+    $('.js-sort-list li').removeClass('is-active');
+    var num = $(this).data('index');
+    var target = '[data-index="' + num + '"]';
+    $(target).each(function(){
+      $(target).addClass('is-active');
+    });
+  })
+
   //スティッキーヘッダー
   var $window = $(window);
   var $scrollHeader = $('#js-scroll-header');
