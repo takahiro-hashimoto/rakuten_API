@@ -1,5 +1,4 @@
-# 「.DS_Store」や「._.DS_Store」を除外
-*.DS_Store
-
-# 「node_modules」を除外
-.node_modules/
+*.swp
+._*
+.DS_Store
+node_module
