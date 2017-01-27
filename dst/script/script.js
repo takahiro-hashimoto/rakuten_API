@@ -9,8 +9,7 @@ function searchItem(keyword,page) {
   type: 'GET',
   url: 'https://app.rakuten.co.jp/services/api/IchibaItem/Search/20130424',
   data: {
-  applicationId: '1031022262194317111',
-  affiliateId: '146d79aa.7a7900a1.146d79ab.cab55273',
+
   keyword: keyword,
   page: page
   }
@@ -64,7 +63,7 @@ function createItems(data) {
   }
 }
 
-$(document).on('click', '.js-sort-review-score-high', function(){
+$('.js-sort-review-score-high').on('click', function(){
   if(Items) {
   Items.Items.sort(function(a, b) {
   return b.Item.reviewAverage - a.Item.reviewAverage;

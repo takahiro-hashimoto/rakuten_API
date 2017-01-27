@@ -64,7 +64,7 @@ function createItems(data) {
   }
 }
 
-$(document).on('click', '.js-sort-review-score-high', function(){
+$('.js-sort-review-score-high').on('click', function(){
   if(Items) {
   Items.Items.sort(function(a, b) {
   return b.Item.reviewAverage - a.Item.reviewAverage;
